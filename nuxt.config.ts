@@ -9,7 +9,8 @@ export default defineNuxtConfig({
         autoImports: ['defineStore', 'storeToRefs'],
       },
     ],
-    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/tailwindcss', { viewer: true }],
+    '@vueuse/nuxt',
   ],
   alias: {
     // basic aliases
